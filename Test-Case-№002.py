@@ -11,7 +11,7 @@ class GoogleTestCase(unittest.TestCase):
     def test_registration_form(self):
         driver = self.driver
         driver.get('http://ivan4ik810.temp.swtest.ru/Regist.html')
-        
+
         self.assertIn('PlayBaza1', driver.title)
 
         driver.find_element(By.ID, "registr_login_input").send_keys("ИванИванИванИванИванИванИ")
