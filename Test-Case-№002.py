@@ -12,7 +12,7 @@ class GoogleTestCase(unittest.TestCase):
         driver = self.driver
         driver.get('http://ivan4ik810.temp.swtest.ru/Regist.html')
         
-        self.assertIn('PlayBaza', driver.title)
+        self.assertIn('PlayBaza1', driver.title)
 
         driver.find_element(By.ID, "registr_login_input").send_keys("ИванИванИванИванИванИванИ")
         driver.find_element(By.ID, "registr_email_input").send_keys("12312312312312312312312312312@123.2")
